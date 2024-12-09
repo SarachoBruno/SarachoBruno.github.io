@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Saracho Bruno Portafolio</title>
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+    
+</head>
+<body>
+	<div class="contenedor">
+		<header>
+		<div class="header-contenido">
+			<div class="header-img">
+				<img src="img/img.jpg" >
+			</div>
+			<div class="header-titulo">
+				<h1>Saracho Bruno.</h1>
+				<p>Desarrollador Backend en JAVA.</p>
+			</div>
+		</div>
+			<nav class="header-nav">
+            	<ul>
+                	<li><a href="#about">Sobre mí</a></li>
+                	<li><a href="#skills">Habilidades</a></li>
+                	<li><a href="#projects">Proyectos</a></li>
+                	<li><a href="#contact">Contacto</a></li>
+            	</ul>
+        	</nav>
+		</header>
+		<main>
+        <section id="about" class="sobreMi">
+            <h2>Sobre mí</h2>
+            <p>&nbsp Soy un desarrollador Backend en JAVA, aprendí a utilizar este lenguaje de programación en la <b>UNSA</b> (Universidad Nacional de Salta) donde estudio la carrera de <b>Técnico en Programación</b>, aprendí a utilizar <b>Spring Boot</b> por mi cuenta y también tengo el titulo de <b>Técnico Electrómecanico</b> en el colegio E.E.T N° 3134 (Escuela de Educacion Técnica).</p>
+        </section>
+        <br>
+        <br>
+        <section id="skills">
+            <h2>Habilidades</h2>
+            <div class="skills-list">
+                <div class="skill">JAVA</div>
+                <div class="skill">Spring Boot</div>
+                <div class="skill">MySQL</div>
+                <div class="skill">C</div>
+                <div class="skill">HTML</div>
+                <div class="skill">CSS</div>
+                <div class="skill">JavaScript</div>
+            </div>
+        </section>
+        <br>
+        <br>
+        <section id="projects">
+            <h2>Proyectos</h2>
+            <div class="project">
+                <h3>Directorio de Peliculas</h3>
+                <p>&nbsp ¿Tienes peliculas que siempre quieres ver pero se te olvida? Este proyecto busca que tengas tu propia lista de peliculas o series que quieras ver, puedes agregar, eliminar o modificar si te equivocaste.</p>
+                <img src="img/portada1.jpg" alt="Proyecto 1" class="main-image">
+                <div class="masImg modal">
+                    <span class="close">&times;</span>
+                    <div class="modal-content">
+                        <img src="img/img2.jpg" alt="Imagen adicional">
+                        <img src="img/peliculas1.jpg" alt="Imagen modal adicional">
+                        <img src="img/peliculas2.jpg" alt="Imagen modal adicional">
+                        <img src="img/peliculas3.jpg" alt="Imagen modal adicional">
+                        <img src="img/peliculas4.jpg" alt="Imagen modal adicional">
+                        <img src="img/peliculas5.jpg" alt="Imagen modal adicional">
+                        <img src="img/peliculas6.jpg" alt="Imagen modal">
+                        <img src="img/peliculas7.jpg" alt="Imagen modal">
+                        <img src="img/peliculas8.jpg" alt="Imagen modal">
+                        <img src="img/peliculas9.jpg" alt="Imagen modal">
+                    </div>
+                    
+                </div>
+                <a href="https://github.com/trompeta17/Directorio-de-peliculas" target="_blank">Ver Código</a>
+            </div>
+            <div class="project">
+                <h3>Galeria de Imagenes</h3>
+                <p>&nbsp ¿Quieres descargar imagenes o simplemente ver? Con este proyecto puedes filtrar imagenes ya sea de anime, peliculas o series</p>
+                <img src="img/portada2.jpg" alt="Proyecto 2" class="main-image">
+                <div class="masImg modal">
+                    <span class="close">&times;</span>
+                    <div class="modal-content">
+                        <img src="img/galeria1.jpg">
+                        <img src="img/galeria2.jpg">
+                        <img src="img/galeria3.jpg">
+                        <img src="img/galeria4.jpg">
+                        <img src="img/galeria5.jpg">
+                        <img src="img/galeria6.jpg">
+                    </div>
+                </div>
+                <a href="https://github.com/SarachoBruno/Galeria-de-imagenes.git" target="_blank">Ver Código</a>
+                
+            </div>
+        </section>
+
+        <div class="contact-form" id="contact">
+        <h2>Contáctame</h2>
+        <form id="contactForm">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+            
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" placeholder="Tu correo" required>
+            
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" rows="4" placeholder="Escribe tu mensaje aquí" required></textarea>
+            
+            <button type="submit">Enviar</button>
+            <p id="responseMessage"></p>
+        </form>
+    </div>
+    </main>
+
+    <footer>
+        <p>© 2024 [Saracho Bruno].</p>
+        <div class="socials">
+            <a href="https://www.linkedin.com/in/bruno-saracho/" target="_blank">Linkedin</a>
+            <a href="https://github.com/trompeta17" target="_blank">GitHub</a>
+        </div>
+    </footer>
+	</div>
+
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "YOUR_PUBLIC_KEY",
+      });
+   })();
+</script>
+<script src="script/codigo.js"></script>
+</body>
+</html>
